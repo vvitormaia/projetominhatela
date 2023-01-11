@@ -17,16 +17,9 @@ Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnolog
   <a href="#-layout">Layout</a>     |    
 
   <a href="#memo-licença">Licença</a>
-
 </p>
 
 <br>
-
-<p  alinhar = "centro" >
-
-  <img  alt = "projeto DevLinks"  src = ".github/preview.jpg"  width = "100%" >
-
-</p>
 
 ## 🚀 Tecnologias
 
@@ -35,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML e CSS
 - JavaScript
 - Git e Github
--Figma
+- Figma
 
 ## 💻 Projeto
 

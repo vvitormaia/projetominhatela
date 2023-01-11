@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: white; 
+    --bg-url: url(./imagens/background1.jpg);
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(255, 255, 255, 0.2); 
+    --switch-br-url: url(./assets/monn-stars.svg);
+}
+
+.light {
+    --text-color: black; 
+    --bg-url: url(./imagens/background2.jpg); 
+    --strole-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(0, 0, 0, 0.1); 
+    --switch-br-url: url(./assets/sun.svg);
+}
+
+body {
+    background-image: var(--bg-url);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    padding: 24px 0px;
+}
+
+ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    background: var(--surface-color);
+    border-radius: 8px;
+    transition: background 0.2;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+ul li a:hover {
+    background: var(--surface-color-hover);
+    border: 1.5px solid var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    padding: 24px 0px;
+    text-align: center;
+    font-size: 12px;
+}
+ 
+#box {
+    width: 360px ;
+    margin: 56px auto auto auto;
+    padding: 0px 24px;
+}
+
+#perfil {
+    text-align: center;
+    padding: 24px;
+}
+
+#perfil img {
+    width: 112px;
+}
+
+#perfil p {
+font-weight: 500;
+line-height: 24px;
+margin-top: 8px;
+}
+
+#social {
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+#social ion-icon  {
+    width: 32px;
+    height: 32px;
+}
+
+#social a { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+
+}
+
+#social a:hover{
+    background: var(--highlight-color);
+    transition: background 0.2s;
+    border-radius: 50%;
+}
+
+#botao {
+    position: relative;
+    width: 64px;
+    margin: 4px auto;
+}
+
+#botao button {
+    width: 32px;
+    height: 32px;
+    background: white;
+    border: 0;
+    border-radius: 50%;
+    background-image: var(--switch-br-url);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+#botao span {
+    width: 64px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    display: block;
+    border-radius: 9999px;
+}
+
+.light #botao button {
+    right: 0;
+    left: initial;
+}
